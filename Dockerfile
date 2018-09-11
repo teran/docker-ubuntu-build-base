@@ -3,7 +3,8 @@ FROM ubuntu:bionic
 RUN apt-get update && \
     apt-get install -y --no-install-suggests --no-install-recommends \
         ca-certificates \
-        git-core && \
+        git-core \
+        gnupg && \
     apt-get clean && \
     rm -rvf /var/lib/apt/lists/*
 
